@@ -1,7 +1,7 @@
-export const Message = ({tweet}) => {
+export const Message = ({message}) => {
     return (
         <p className="message">
-          {tweet.message}
+          {message}
         </p>
     )
 }

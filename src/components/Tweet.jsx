@@ -7,16 +7,16 @@ import { Actions } from './Actions'
 function Tweet({tweet}) {
   return (
     <div className="tweet">
-      <ProfileImage tweet={tweet}/>
+      <ProfileImage image={tweet.user.image}/>
 
       <div className="body">
         <div className="top">
-          <User tweet={tweet} />
+          <User user={tweet.user} />
 
-          <Timestamp tweet={tweet} />
+          <Timestamp timestamp={tweet.timestamp} />
         </div>
 
-        <Message tweet={tweet} />
+        <Message message={tweet.message} />
 
         
         <Actions />

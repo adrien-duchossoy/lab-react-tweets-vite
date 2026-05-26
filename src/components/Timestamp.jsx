@@ -1,5 +1,5 @@
-export const Timestamp = ({tweet}) => {
+export const Timestamp = ({timestamp}) => {
     return (
-        <span className="timestamp">{tweet.timestamp}</span>
+        <span className="timestamp">{timestamp}</span>
     )
 }
